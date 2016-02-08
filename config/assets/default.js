@@ -4,8 +4,12 @@ module.exports = {
   client: {
     lib: {
       css: [
-        'public/lib/bootstrap/dist/css/bootstrap.css',
-        'public/lib/bootstrap/dist/css/bootstrap-theme.css'
+       /* 'public/lib/bootstrap/dist/css/bootstrap.css',
+         'public/lib/bootstrap/dist/css/bootstrap-theme.css'*/
+          'public/lib/theme/css/bootstrap.min.css',
+        'public/lib/theme/css/creative.css',
+        'public/lib/theme/css/animate.min.css',
+        'public/lib/theme/font-awesome/css/font-awesome.min.css'
       ],
       js: [
         'public/lib/angular/angular.js',
@@ -21,10 +25,13 @@ module.exports = {
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },
     css: [
-      'modules/*/client/css/*.css'
+      'modules/*/client/css/*.css',
+      'public/theme/**/css/*.css',
+      'public/theme/**/css/font-awesome/**/css/*.css'
     ],
     less: [
-      'modules/*/client/less/*.less'
+      'modules/*/client/less/*.less',
+      'public/theme/**/css/font-awesome/**/less/*.less'
     ],
     sass: [
       'modules/*/client/scss/*.scss'
