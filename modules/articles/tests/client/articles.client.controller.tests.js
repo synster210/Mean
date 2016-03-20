@@ -68,11 +68,11 @@
     }));
 
     it('$scope.find() should create an array with at least one article object fetched from XHR', inject(function (Articles) {
-      // Create a sample articles array that includes the new article
+      // Create a sample needs array that includes the new article
       var sampleArticles = [mockArticle];
 
       // Set GET response
-      $httpBackend.expectGET('api/articles').respond(sampleArticles);
+      $httpBackend.expectGET('api/needs').respond(sampleArticles);
 
       // Run controller functionality
       scope.find();
@@ -116,7 +116,7 @@
 
       it('should send a POST request with the form input values and then locate to new object URL', inject(function (Articles) {
         // Set POST response
-        $httpBackend.expectPOST('api/articles', sampleArticlePostData).respond(mockArticle);
+        $httpBackend.expectPOST('api/needs', sampleArticlePostData).respond(mockArticle);
 
         // Run controller functionality
         scope.create(true);
@@ -127,12 +127,12 @@
         expect(scope.content).toEqual('');
 
         // Test URL redirection after the article was created
-        expect($location.path.calls.mostRecent().args[0]).toBe('articles/' + mockArticle._id);
+        expect($location.path.calls.mostRecent().args[0]).toBe('needs/' + mockArticle._id);
       }));
 
       it('should set scope.error if save error', function () {
         var errorMessage = 'this is an error message';
-        $httpBackend.expectPOST('api/articles', sampleArticlePostData).respond(400, {
+        $httpBackend.expectPOST('api/needs', sampleArticlePostData).respond(400, {
           message: errorMessage
         });
 
@@ -158,7 +158,7 @@
         $httpBackend.flush();
 
         // Test URL location to new object
-        expect($location.path()).toBe('/articles/' + mockArticle._id);
+        expect($location.path()).toBe('/needs/' + mockArticle._id);
       }));
 
       it('should set scope.error to error response message', inject(function (Articles) {
@@ -176,7 +176,7 @@
 
     describe('$scope.remove(article)', function () {
       beforeEach(function () {
-        // Create new articles array and include the article
+        // Create new needs array and include the article
         scope.articles = [mockArticle, {}];
 
         // Set expected DELETE response
@@ -202,8 +202,8 @@
         $httpBackend.flush();
       });
 
-      it('should redirect to articles', function () {
-        expect($location.path).toHaveBeenCalledWith('articles');
+      it('should redirect to needs', function () {
+        expect($location.path).toHaveBeenCalledWith('needs');
       });
     });
   });

@@ -20,14 +20,17 @@ module.exports = {
         'public/lib/angular-ui-utils/ui-utils.js',
         'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
         'public/lib/angular-file-upload/angular-file-upload.js',
-        'public/lib/owasp-password-strength-test/owasp-password-strength-test.js'
+        'public/lib/owasp-password-strength-test/owasp-password-strength-test.js',
+        'public/theme/**/js/*.js',
+        'public/lib/ui-grid/ui-grid.min.js',
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },
     css: [
       'modules/*/client/css/*.css',
       'public/theme/**/css/*.css',
-      'public/theme/**/css/font-awesome/**/css/*.css'
+      'public/theme/**/css/font-awesome/**/css/*.css',
+      'public/lib/ui-grid/ui-grid.css',
     ],
     less: [
       'modules/*/client/less/*.less',

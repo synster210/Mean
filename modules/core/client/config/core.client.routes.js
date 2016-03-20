@@ -38,5 +38,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
         ignoreState: true
       }
     });
+
+
   }
 ]);

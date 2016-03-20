@@ -1,14 +1,18 @@
 'use strict';
 
 // Setting up route
-angular.module('dashboard').config(['$stateProvider',
+angular.module('articles').config(['$stateProvider',
   function ($stateProvider) {
     // Articles state routing
     $stateProvider
       .state('dashboard', {
         abstract: true,
         url: '/dashboard',
-        template: 'modules/dashboard/client/views/dashboard.client.view.html'
+        template: '<ui-view/>'
+      })
+        .state('dashboard.view', {
+        url: '/view',
+        templateUrl: 'modules/dashboard/client/views/view-dashboard.client.view.html'
       });
   }
 ]);

@@ -1,0 +1,43 @@
+<section ng-controller="AppController as app" >
+  <div class="page-header">
+    <h1>Dashboard</h1>
+  </div>
+
+  <div class="col-md-12">
+    <label>Skill : </label>
+    <input type="text" ng-model="app.newSkill.skill"/>
+    <label>Experience : </label>
+    <input type="text" ng-model="app.newSkill.experience"/>
+    <label>Job Id : </label>
+    <input type="text" ng-model="app.newSkill.jobId"/>
+    <label>Job Description : </label>
+    <input type="text" ng-model="app.newSkill.jobDescription"/>
+    <label>IsOpen : </label>
+    <input type="text" ng-model="app.newSkill.isOpen"/>
+    <button ng-click="app.saveSkill(app.newSkill)">Save Skill</button>
+    <div>
+      <div ui-grid="{ data: myData,enableFiltering: true}" class="myGrid"></div>
+    </div>
+
+  </div>
+
+ <!-- <div ng-controller="MainCtrl">
+    <div class="control-group">
+      <input type="button" class="btn btn-small" ng-click="expandAllRows()" value="Expand All"/>
+      <input type="button" class="btn btn-small" ng-click="collapseAllRows()" value="Collapse All"/>
+    </div>
+    <div ui-grid="gridOptions" ui-grid-pinning ui-grid-expandable class="grid"></div>
+  </div>
+  Expandable rows works with checkboxes from selection and left pins
+  <div ng-controller="SecondCtrl">
+    <div ui-grid="gridOptions" ui-grid-pinning ui-grid-expandable ui-grid-selection class="grid"></div>
+  </div>
+  Retrieve data for subGrid when expanding
+  <div ng-controller="ThirdCtrl">
+    <div ui-grid="gridOptions" ui-grid-expandable class="grid"></div>
+  </div>-->
+
+
+
+
+</section>
