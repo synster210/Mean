@@ -1,25 +1,25 @@
 'use strict';
 
 // Configuring the Articles module
-angular.module('dashboard').run(['Menus',
+angular.module('needs').run(['Menus',
   function (Menus) {
     // Add the needs dropdown item
     Menus.addMenuItem('topbar', {
-      title: 'Create',
+      title: 'Need',
       state: 'needs',
       type: 'dropdown',
-      roles: ['*']
+      roles: ['user']
     });
 
     // Add the dropdown list item
     Menus.addSubMenuItem('topbar', 'needs', {
-      title: 'List Articles',
+      title: 'List Needs',
       state: 'needs.list'
     });
 
     // Add the dropdown create item
     Menus.addSubMenuItem('topbar', 'needs', {
-      title: 'Create Articles',
+      title: 'Create Needs',
       state: 'needs.create',
       roles: ['user']
     });

@@ -5,10 +5,10 @@ angular.module('articles').run(['Menus',
   function (Menus) {
     // Add the needs dropdown item
     Menus.addMenuItem('topbar', {
-      title: 'Articles',
+      title: 'Candidate',
       state: 'articles',
       type: 'dropdown',
-      roles: ['*']
+      roles: ['user']
     });
 
     // Add the dropdown list item

@@ -1,0 +1,161 @@
+<section ng-controller="ArticlesController">
+  <div class="page-header">
+    <h1>New Need</h1>
+  </div>
+  <div class="col-md-offset-3 col-md-6 center">
+    <form name="needForm" class="form-horizontal" ng-submit="create(needForm.$valid)" novalidate>
+
+
+        <div class="form-group">
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="team">Team</label>
+            </div>
+            <div class="col-md-6">
+              <input name="team" type="text" ng-model="title" id="team" class="form-control" placeholder="Team" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="geography">Geography</label>
+            </div>
+            <div class="col-md-6">
+              <select name="geography"  ng-model="title" id="geography" class="form-control" placeholder="Geography" required></select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="jd">Job Description</label>
+            </div>
+            <div class="col-md-6">
+              <textarea name="jd" type="text" ng-model="title" id="jd" class="form-control" placeholder="Job Description" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="sd">Start Date</label>
+            </div>
+            <div class="col-md-6">
+              <input name="sd" type="date" ng-model="title" id="sd" class="form-control" placeholder="Start Date" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="cd">Creation Date</label>
+            </div>
+            <div class="col-md-6">
+              <input name="cd" type="date" ng-model="title" id="cd" class="form-control" placeholder="Creation Date" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="skill">Skill</label>
+            </div>
+            <div class="col-md-6">
+              <input name="skill" type="text" ng-model="title" id="skill" class="form-control" placeholder="Skill" required/>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="experience">Experience</label>
+            </div>
+            <div class="col-md-6">
+              <input name="experience" type="text" ng-model="title" id="experience" class="form-control" placeholder="Experience" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="criticality">Criticality</label>
+            </div>
+            <div class="col-md-6">
+              <input name="criticality" type="text" ng-model="title" id="criticality" class="form-control" placeholder="Criticality" required/>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="opportunistic">Opportunistic</label>
+            </div>
+            <div class="col-md-6">
+              <input name="opportunistic" type="text" ng-model="title" id="opportunistic" class="form-control" placeholder="Opportunistic" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="backfill">Backfill</label>
+            </div>
+            <div class="col-md-6">
+              <input name="backfill" type="text" ng-model="title" id="backfill" class="form-control" placeholder="Backfill" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="status">Status</label>
+            </div>
+            <div class="col-md-6">
+              <input name="status" type="text" ng-model="title" id="status" class="form-control" placeholder="Status" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="ce">Client Executive</label>
+            </div>
+            <div class="col-md-6">
+              <input name="ce" type="text" ng-model="title" id="ce" class="form-control" placeholder="Client Executive" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="oid">Oracle ID</label>
+            </div>
+            <div class="col-md-6">
+              <input name="oid" type="text" ng-model="title" id="oid" class="form-control" placeholder="Oracle ID" required/>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="designation">Designation</label>
+            </div>
+            <div class="col-md-6">
+              <input name="designation" type="text" ng-model="title" id="designation" class="form-control" placeholder="Designation" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-primary">
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div ng-show="error" class="text-danger">
+          <strong ng-bind="error"></strong>
+        </div>
+
+    </form>
+  </div>
+</section>
