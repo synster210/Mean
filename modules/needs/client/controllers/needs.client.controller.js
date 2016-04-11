@@ -17,8 +17,20 @@ angular.module('needs').controller('NeedsController', ['$scope', '$stateParams',
 
       // Create new Article object
       var need = new Needs({
-        title: this.title,
-        content: this.content
+        team : this.team,
+        geography :this.geography,
+        jobDescription : this.jobDescription,
+        startDate:this.startDate,
+        creationDate :this.creationDate,
+        skill :this.skill,
+        experience :this.experience,
+        criticality:this.criticality,
+        IsOppurtunistic :this.isOppurtunistic,
+        backfill:this.backfill,
+        status:this.status,
+        clientExecutive :this.clientExecutive,
+        OracleId:this.oracleId,
+        designation:this.designation,
       });
 
       // Redirect after save
@@ -26,8 +38,20 @@ angular.module('needs').controller('NeedsController', ['$scope', '$stateParams',
         $location.path('needs/' + response._id);
 
         // Clear form fields
-        $scope.title = '';
-        $scope.content = '';
+        $scope.team = '';
+        $scope.geography = '';
+        $scope.jobDescription = '';
+        $scope.startDate='';
+        $scope.creationDate ='';
+        $scope.skill ='';
+        $scope.experience ='';
+        $scope.criticality='';
+        $scope.IsOppurtunistic ='';
+        $scope.backfill='';
+        $scope.status='';
+        $scope.clientExecutive ='';
+        $scope.oracleId='';
+        $scope.designation='';
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;
       });

@@ -12,7 +12,7 @@
               <label for="team">Team</label>
             </div>
             <div class="col-md-6">
-              <input name="team" type="text" ng-model="title" id="team" class="form-control" placeholder="Team" required>
+              <select name="team" type="text" ng-model="team" id="team" class="form-control" placeholder="Team" required></select>
             </div>
           </div>
 
@@ -21,7 +21,7 @@
               <label for="geography">Geography</label>
             </div>
             <div class="col-md-6">
-              <select name="geography"  ng-model="title" id="geography" class="form-control" placeholder="Geography" required></select>
+              <select name="geography"  ng-model="geography" id="geography" class="form-control" placeholder="Geography" required></select>
             </div>
           </div>
 
@@ -30,7 +30,7 @@
               <label for="jd">Job Description</label>
             </div>
             <div class="col-md-6">
-              <textarea name="jd" type="text" ng-model="title" id="jd" class="form-control" placeholder="Job Description" required></textarea>
+              <textarea name="jd" type="text" ng-model="jobDescription" id="jd" class="form-control" placeholder="Job Description" required></textarea>
             </div>
           </div>
 
@@ -39,7 +39,7 @@
               <label for="sd">Start Date</label>
             </div>
             <div class="col-md-6">
-              <input name="sd" type="date" ng-model="title" id="sd" class="form-control" placeholder="Start Date" required/>
+              <input name="sd" type="date" ng-model="startDate" id="sd" class="form-control" placeholder="Start Date" required/>
             </div>
           </div>
 
@@ -48,7 +48,7 @@
               <label for="cd">Creation Date</label>
             </div>
             <div class="col-md-6">
-              <input name="cd" type="date" ng-model="title" id="cd" class="form-control" placeholder="Creation Date" required>
+              <input name="cd" type="date" ng-model="creationDate" id="cd" class="form-control" placeholder="Creation Date" required>
             </div>
           </div>
 
@@ -57,7 +57,7 @@
               <label for="skill">Skill</label>
             </div>
             <div class="col-md-6">
-              <input name="skill" type="text" ng-model="title" id="skill" class="form-control" placeholder="Skill" required/>
+              <textarea name="skill" type="text" ng-model="skill" id="skill" class="form-control" placeholder="Skill" required></textarea>
             </div>
           </div>
 
@@ -67,7 +67,7 @@
               <label for="experience">Experience</label>
             </div>
             <div class="col-md-6">
-              <input name="experience" type="text" ng-model="title" id="experience" class="form-control" placeholder="Experience" required/>
+              <select name="experience" type="text" ng-model="experience" id="experience" class="form-control" placeholder="Experience" required></select>
             </div>
           </div>
 
@@ -76,7 +76,7 @@
               <label for="criticality">Criticality</label>
             </div>
             <div class="col-md-6">
-              <input name="criticality" type="text" ng-model="title" id="criticality" class="form-control" placeholder="Criticality" required/>
+              <select name="criticality" type="text" ng-model="criticality" id="criticality" class="form-control" placeholder="Criticality" required></select>
             </div>
           </div>
 
@@ -86,7 +86,9 @@
               <label for="opportunistic">Opportunistic</label>
             </div>
             <div class="col-md-6">
-              <input name="opportunistic" type="text" ng-model="title" id="opportunistic" class="form-control" placeholder="Opportunistic" required/>
+
+              <select name="opportunistic"  ng-model="isOpputunistic" id="opportunistic" class="form-control" placeholder="Opportunistic" required></select>
+
             </div>
           </div>
 
@@ -95,7 +97,7 @@
               <label for="backfill">Backfill</label>
             </div>
             <div class="col-md-6">
-              <input name="backfill" type="text" ng-model="title" id="backfill" class="form-control" placeholder="Backfill" required/>
+              <input name="backfill" type="text" ng-model="backfill" id="backfill" class="form-control" placeholder="Backfill" required/>
             </div>
           </div>
 
@@ -104,7 +106,7 @@
               <label for="status">Status</label>
             </div>
             <div class="col-md-6">
-              <input name="status" type="text" ng-model="title" id="status" class="form-control" placeholder="Status" required/>
+              <select name="status" type="text" ng-model="status" id="status" class="form-control" placeholder="Status" required></select>
             </div>
           </div>
 
@@ -113,7 +115,7 @@
               <label for="ce">Client Executive</label>
             </div>
             <div class="col-md-6">
-              <input name="ce" type="text" ng-model="title" id="ce" class="form-control" placeholder="Client Executive" required/>
+              <input name="ce" type="text" ng-model="clientExecutive" id="ce" class="form-control" placeholder="Client Executive" required/>
             </div>
           </div>
 
@@ -122,7 +124,7 @@
               <label for="oid">Oracle ID</label>
             </div>
             <div class="col-md-6">
-              <input name="oid" type="text" ng-model="title" id="oid" class="form-control" placeholder="Oracle ID" required/>
+              <input name="oid" type="text" ng-model="oracleId" id="oid" class="form-control" placeholder="Oracle ID" required/>
             </div>
           </div>
 
@@ -132,7 +134,7 @@
               <label for="designation">Designation</label>
             </div>
             <div class="col-md-6">
-              <input name="designation" type="text" ng-model="title" id="designation" class="form-control" placeholder="Designation" required/>
+              <input name="designation" type="text" ng-model="designation" id="designation" class="form-control" placeholder="Designation" required/>
             </div>
           </div>
 
