@@ -18,7 +18,7 @@ exports.invokeRolesPolicies = function () {
       resources: '/api/needs',
       permissions: '*'
     }, {
-      resources: '/api/needs/:articleId',
+      resources: '/api/needs/:needId',
       permissions: '*'
     }]
   }, {

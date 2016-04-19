@@ -25,7 +25,7 @@ angular.module('needs').controller('NeedsController', ['$scope', '$stateParams',
         skill :this.skill,
         experience :this.experience,
         criticality:this.criticality,
-        IsOppurtunistic :this.isOppurtunistic,
+        isOppurtunistic :this.isOppurtunistic,
         backfill:this.backfill,
         status:this.status,
         clientExecutive :this.clientExecutive,
@@ -46,7 +46,7 @@ angular.module('needs').controller('NeedsController', ['$scope', '$stateParams',
         $scope.skill ='';
         $scope.experience ='';
         $scope.criticality='';
-        $scope.IsOppurtunistic ='';
+        $scope.isOppurtunistic ='';
         $scope.backfill='';
         $scope.status='';
         $scope.clientExecutive ='';

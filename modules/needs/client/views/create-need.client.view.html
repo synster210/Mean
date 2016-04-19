@@ -1,10 +1,10 @@
-<section ng-controller="ArticlesController">
+<section ng-controller="NeedsController">
   <div class="page-header">
     <h1>New Need</h1>
   </div>
   <div class="col-md-offset-3 col-md-6 center">
     <form name="needForm" class="form-horizontal" ng-submit="create(needForm.$valid)" novalidate>
-
+<fieldset>
 
         <div class="form-group">
           <div class="form-group">
@@ -12,7 +12,12 @@
               <label for="team">Team</label>
             </div>
             <div class="col-md-6">
-              <select name="team" type="text" ng-model="team" id="team" class="form-control" placeholder="Team" required></select>
+              <select name="team" type="text" ng-model="team" id="team" class="form-control" placeholder="Team" required>
+                <option>GApps</option>
+                <option>Tresury</option>
+                <option>CTech</option>
+              </select>
+              {{team}}
             </div>
           </div>
 
@@ -21,7 +26,12 @@
               <label for="geography">Geography</label>
             </div>
             <div class="col-md-6">
-              <select name="geography"  ng-model="geography" id="geography" class="form-control" placeholder="Geography" required></select>
+              <select name="geography"  ng-model="geography" id="geography" class="form-control" placeholder="Geography" required>
+                <option>Gurgaon</option>
+                <option>Noida</option>
+                <option>Bengaluru</option>
+              </select>
+              {{geography}}
             </div>
           </div>
 
@@ -31,6 +41,7 @@
             </div>
             <div class="col-md-6">
               <textarea name="jd" type="text" ng-model="jobDescription" id="jd" class="form-control" placeholder="Job Description" required></textarea>
+              {{jobDescription}}
             </div>
           </div>
 
@@ -41,6 +52,7 @@
             <div class="col-md-6">
               <input name="sd" type="date" ng-model="startDate" id="sd" class="form-control" placeholder="Start Date" required/>
             </div>
+            {{startDate}}
           </div>
 
           <div class="form-group">
@@ -49,6 +61,7 @@
             </div>
             <div class="col-md-6">
               <input name="cd" type="date" ng-model="creationDate" id="cd" class="form-control" placeholder="Creation Date" required>
+            {{creationDate}}
             </div>
           </div>
 
@@ -58,6 +71,7 @@
             </div>
             <div class="col-md-6">
               <textarea name="skill" type="text" ng-model="skill" id="skill" class="form-control" placeholder="Skill" required></textarea>
+            {{skill}}
             </div>
           </div>
 
@@ -67,7 +81,12 @@
               <label for="experience">Experience</label>
             </div>
             <div class="col-md-6">
-              <select name="experience" type="text" ng-model="experience" id="experience" class="form-control" placeholder="Experience" required></select>
+              <select name="experience" type="text" ng-model="experience" id="experience" class="form-control" placeholder="Experience" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              {{experience}}
             </div>
           </div>
 
@@ -76,7 +95,12 @@
               <label for="criticality">Criticality</label>
             </div>
             <div class="col-md-6">
-              <select name="criticality" type="text" ng-model="criticality" id="criticality" class="form-control" placeholder="Criticality" required></select>
+              <select name="criticality" type="text" ng-model="criticality" id="criticality" class="form-control" placeholder="Criticality" required>
+                <option>Minor</option>
+                <option>Normal</option>
+                <option>Major</option>
+              </select>
+              {{criticality}}
             </div>
           </div>
 
@@ -87,8 +111,11 @@
             </div>
             <div class="col-md-6">
 
-              <select name="opportunistic"  ng-model="isOpputunistic" id="opportunistic" class="form-control" placeholder="Opportunistic" required></select>
-
+              <select name="opportunistic"  ng-model="isOpputunistic" id="opportunistic" class="form-control" placeholder="Opportunistic" required>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+{{isOpputunistic}}
             </div>
           </div>
 
@@ -98,6 +125,7 @@
             </div>
             <div class="col-md-6">
               <input name="backfill" type="text" ng-model="backfill" id="backfill" class="form-control" placeholder="Backfill" required/>
+           {{backfill}}
             </div>
           </div>
 
@@ -106,7 +134,12 @@
               <label for="status">Status</label>
             </div>
             <div class="col-md-6">
-              <select name="status" type="text" ng-model="status" id="status" class="form-control" placeholder="Status" required></select>
+              <select name="status" type="text" ng-model="status" id="status" class="form-control" placeholder="Status" required>
+                <option>Open</option>
+                <option>Closed</option>
+                <option>InProgress</option>
+              </select>
+              {{status}}
             </div>
           </div>
 
@@ -116,6 +149,7 @@
             </div>
             <div class="col-md-6">
               <input name="ce" type="text" ng-model="clientExecutive" id="ce" class="form-control" placeholder="Client Executive" required/>
+            {{clientExecutive}}
             </div>
           </div>
 
@@ -125,6 +159,7 @@
             </div>
             <div class="col-md-6">
               <input name="oid" type="text" ng-model="oracleId" id="oid" class="form-control" placeholder="Oracle ID" required/>
+            {{oracleId}}
             </div>
           </div>
 
@@ -136,6 +171,7 @@
             <div class="col-md-6">
               <input name="designation" type="text" ng-model="designation" id="designation" class="form-control" placeholder="Designation" required/>
             </div>
+            {{designation}}
           </div>
 
           <div class="form-group">
@@ -157,6 +193,7 @@
         <div ng-show="error" class="text-danger">
           <strong ng-bind="error"></strong>
         </div>
+</fieldset>
 
     </form>
   </div>

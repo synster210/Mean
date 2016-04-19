@@ -22,7 +22,7 @@ angular.module('needs').config(['$stateProvider',
         }
       })
       .state('needs.view', {
-        url: '/:articleId',
+        url: '/:needId',
         templateUrl: 'modules/needs/client/views/view-need.client.view.html'
       })
       .state('needs.edit', {
